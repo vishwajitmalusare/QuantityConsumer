@@ -5,13 +5,14 @@ group 'com.thoughtworks.bootcamp'
 version '1.0-SNAPSHOT'
 sourceCompatibility = JavaVersion.VERSION_11
 repositories {
+    mavenLocal()
     mavenCentral()
 }
 test {
     useJUnitPlatform()
 }
 dependencies {
-    compile 'com.thoughtworks.bootcamp:Quantity:1.0-SNAPSHOT'
+    compile 'com.thoughtworks.bridgelabz:Quantity:1.0-SNAPSHOT'
     compileOnly 'org.projectlombok:lombok:1.18.6'
     annotationProcessor 'org.projectlombok:lombok:1.18.6'
     testCompile 'org.mockito:mockito-core:1.+'
