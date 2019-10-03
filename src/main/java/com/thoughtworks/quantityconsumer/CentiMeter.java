@@ -10,7 +10,7 @@ public class CentiMeter implements UnitInterface {
     private double converter = 2.54;
     @Override
     public AddableQuantity convertToBase(double value) {
-        return new AddableQuantity(value * converter,new Inch());
+        return new AddableQuantity(value * 1/converter,new Inch());
     }
     public boolean equals(Object object) {
         return object instanceof CentiMeter;
